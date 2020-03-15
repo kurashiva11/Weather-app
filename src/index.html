@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="crossorigin=""/>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+    <script src="/js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="Mainbody">
+            <header class="head">
+                <h1>Weather-Forecasting</h1>
+            </header>
+            <form id="formid" action="" class="form">
+                <input type = "text" name = "search" placeholder="Location..">
+                <button type="submit" id = "submit"><i class="fa fa-search"></i></button>
+            </form>
+            <span>
+                <button id = "getlocation" style="font-size:24px"><i class="material-icons">my_location</i>Current Location</button>
+                <div class="message-1">
+                    <div class="place" >
+                        <p id="message-1"></p>
+                    </div>
+                    <div class="map-container"> 
+                        <div id="mapid"></div>
+                    </div>
+                </div>
+        </div>
+            <table class="table table-striped">
+                <thead class='head'>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Today</th>
+                    <th scope="col">Day 2</th>
+                    <th scope="col">Day 3</th>
+                    <th scope="col">Day 4</th>
+                    <th scope="col">Day 5</th>
+                    <th scope="col">Day 6</th>
+                    <th scope="col">Day 7</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="summary">Summary</th>
+                    <td class="sumtd"></td>
+                    <td class="sumtd"></td>
+                    <td class="sumtd"></td>
+                    <td class="sumtd"></td>
+                    <td class="sumtd"></td>
+                    <td class="sumtd"></td>
+                    <td class="sumtd"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="mint">Minimum Temperature</th>
+                    <td class="mintemp"></td>
+                    <td class="mintemp"></td>
+                    <td class="mintemp"></td>
+                    <td class="mintemp"></td>
+                    <td class="mintemp"></td>
+                    <td class="mintemp"></td>
+                    <td class="mintemp"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="maxt">Maximum Temperature</th>
+                    <td class="maxtemp"></td>
+                    <td class="maxtemp"></td>
+                    <td class="maxtemp"></td>
+                    <td class="maxtemp"></td>
+                    <td class="maxtemp"></td>
+                    <td class="maxtemp"></td>
+                    <td class="maxtemp"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="prob">Probability of rain</th>
+                    <td class="probval"></td>
+                    <td class="probval"></td>
+                    <td class="probval"></td>
+                    <td class="probval"></td>
+                    <td class="probval"></td>
+                    <td class="probval"></td>
+                    <td class="probval"></td>
+                  </tr>
+                </tbody>
+              </table>
+        </span>
+    </div>
+    </div>
+</body>
+
+</html>
+
+
