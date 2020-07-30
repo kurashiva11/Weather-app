@@ -6,7 +6,7 @@
     "start": "node src/app.js"
   },
   "keywords": [],
-  "author": "BEING_XOR",
+  "author": "Kura Bharadwaj",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.0.0",

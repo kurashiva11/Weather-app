@@ -2,12 +2,10 @@ const path = require('path')
 const express = require('express')
 const geocode = require('./utils/geocode.js')
 const forecast = require('./utils/forecast.js')
-const reverseGeocode = require('./utils/reverse-geocode.js')
 const currentLocation = require('./utils/current-location.js')
 require('dotenv').config()
 const app = express()
 const port = process.env.PORT || 3000
-
 
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, 'index.html')

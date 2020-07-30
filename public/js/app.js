@@ -13,7 +13,6 @@ var mapid;
     e.preventDefault()
     const location = search.value 
     fetch('/weather?address=' + location ).then((response) => {
-        // console.log(response.json)
      response.json().then((data) => {
          if(data.error){
              message1.textContent = data.error
